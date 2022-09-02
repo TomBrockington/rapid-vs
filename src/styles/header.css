@@ -1,0 +1,49 @@
+.header__container {
+  background-color: black;
+  color: lightgray;
+  border: 5px solid lightgray;
+  display: grid;
+  place-items: center;
+  margin: 0 0.25rem;
+  height: 85vh;
+}
+
+.header__background__image {
+  color: lightgray;
+  border: 5px solid lightgray;
+  display: grid;
+  place-items: center;
+  margin: 0.5rem;
+  height: 80vh;
+  background-image: url("../images/moor.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.main__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__logo img {
+  place-items: center;
+}
+
+.header__container img {
+  width: 30%;
+}
+
+.header__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 90%;
+  padding: 2rem;
+  border: 2px solid #f69122;
+  margin: 1rem;
+}
+
+.header__info img {
+  width: 200px;
+}

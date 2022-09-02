@@ -1,0 +1,33 @@
+.info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    width: auto;
+    place-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    border: 2px solid white;
+}
+
+.van__image {
+    background-image: url("../images/van_logo.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.info_container img {
+    height: 150px;
+    width: auto;
+    
+}
+
+.info_container > * {
+    border: 2px solid black;
+    height: 300px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
