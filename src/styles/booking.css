@@ -1,24 +1,4 @@
-.bookinginfo_container {
-    display: grid;
-    place-items: center;
+.review__container {
+    padding: 0.5rem;
     margin: 0.5rem;
-    gap: 0.2rem;
-
-    border: 2px solid black;
-    font-size: 3rem;
-    height: 100vh;
-}
-
-/* .info_container img {
-    height: 150px;
-    width: auto;
-    
-} */
-
-.bookinginfo_container > * {
-    border: 1px solid black;
-    height: 200px;
-    width: 100%;
-    display: grid;
-    place-content: center;
 }

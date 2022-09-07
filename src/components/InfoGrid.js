@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "../images/RVS-logo.jpg";
 import van from '../images/disposal.jpg'
-import spacious from '../images/spacious-bike.jpg'
-import whiteGoods from '../images/white-goods.jpg'
 import vanLogo from '../images/van_logo.jpg'
 import "../styles/infoGrid.css";
 
@@ -18,11 +16,10 @@ function InfoGrid() {
         </p>
       </div>
       <div className="van__image">
-        {/* <img src={van} alt="Rapid van solutions logo" /> */}
-        <p>Van Man!</p>
+        {/* image in css background */}
       </div>
-      <div>
-        <img src={spacious} alt="Rapid van solutions logo" />
+      <div className="van__image2">
+        {/* image in css background */}
       </div>
       <div>
         <h2> Speciality Items</h2>
@@ -38,11 +35,11 @@ function InfoGrid() {
           consequatur nam? Sed facilis, odit possimus earum, repellendus alias quis eos officiis vitae vero voluptate debitis beatae. Quas voluptas hic maxime laudantium repudiandae sapiente qui voluptate itaque?
         </p>
       </div>
-      <div>
-        <img src={whiteGoods} alt="Rapid van solutions logo" />
+      <div className="van__image3">
+        {/* image in css background */}
       </div>
-      <div>
-        <img src={vanLogo} alt="Rapid van solutions logo" />
+      <div className="van__image4">
+        {/* image in css background */}
       </div>
       <div>
       <p>

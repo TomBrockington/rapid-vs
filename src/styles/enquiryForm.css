@@ -1,0 +1,28 @@
+.form__container {
+    padding: 3rem;
+    margin: 0.5rem;
+    border: 2px solid lightgray;
+}
+.rating-section {
+    padding: 0.025rem;
+    margin: 0.025rem;
+}
+
+.enquiry__form {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 0.5rem;
+}
+
+
+label {
+    width: 200px;
+}
+
+input {
+    width: 300px;
+}
+
+.form__submit__button {
+    width: 300px;
+}

@@ -10,7 +10,7 @@ function Header() {
         <div className="header__background__image">
           <div className="main__logo">
             <div></div>
-            <img src={logo} alt="logo" />
+            <img className="header__logo" src={logo} alt="logo" />
           </div>
 
           <div className="header__info">

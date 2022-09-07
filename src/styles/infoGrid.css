@@ -1,33 +1,53 @@
 .info_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 300px 300px;
-    width: auto;
-    place-items: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  width: auto;
+  place-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  gap: 0.5rem;
 
-    border: 2px solid white;
+  border: 2px solid lightgray;
 }
 
 .van__image {
-    background-image: url("../images/van_logo.jpg");
+  background-image: url("../images/van_logo.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.van__image2 {
+  background-image: url('../images/white-goods.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.van__image3 {
+  background-image: url('../images/spacious-bike.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.van__image4 {
+  background-image: url("../images/van-interrior.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
 
 .info_container img {
-    height: 150px;
-    width: auto;
-    
+  height: 150px;
+  width: auto;
 }
 
 .info_container > * {
-    border: 2px solid black;
-    height: 300px;
-    width: 100%;
-    display: grid;
-    place-items: center;
+  border: 2px solid black;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }

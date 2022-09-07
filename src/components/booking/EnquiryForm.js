@@ -1,48 +1,77 @@
 import React, { useState } from "react";
+import "../../styles/enquiryForm.css";
+
 
 function EnquiryForm() {
-  const [name, setName] = useState("");
+  const [formData, setFormData] = useState({
+    name: "", enquiry: "", phone: "", email: ""
+  });
 
   const handleChange = (event) => {
     event.preventDefault();
     console.log("HC etv", event.target.value);
-    setName(event.target.value);
+    setFormData(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log('hi');
   };
 
   const showData = (event) => {
     event.preventDefault();
 
-    console.log("name", name);
+    console.log("name", formData.name);
   };
 
   return (
-    <section>
-      <div>
-        <h3>EnquiryForm</h3>
+    <section className="form__container">
+      <div className="form__header">
+        <h2>EnquiryForm</h2>
       </div>
       <div>
-        <form>
+        <form className="enquiry__form" onSubmit={handleSubmit}>
+          
           <label htmlFor="name">
             Name:
-            <input type="text" minLength={5} required onChange={handleChange} />
+            <input 
+              type="text" 
+              required 
+              onChange={handleChange} 
+              value={formData.name} />
+          </label>
+
+          <label htmlFor="email">
+            email:
+            <input 
+              type="email" 
+              minLength={5} 
+              required 
+              onChange={handleChange}
+              value={formData.email} />
+          </label>
+
+          <label htmlFor="phone">
+            phone:
+            <input 
+              type="phone" 
+              minLength={11} 
+              onChange={handleChange}
+              value={formData.phone} />
           </label>
 
           <label htmlFor="textarea">
-            Enquirey:
+            Enquiery:
             <input
               type="textarea"
               required
               onChange={handleChange}
-              rows={5}
-          cols={5}
+              rows={10}
+              value={formData.enquiry}
             />
           </label>
 
-          <button onSubmit={handleSubmit} onClick={showData}>
+          <button className="form__submit__button" type="submit" onClick={showData}>
             Submit
           </button>
 

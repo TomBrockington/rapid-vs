@@ -30,6 +30,10 @@
   place-items: center;
 }
 
+.header__logo {
+  border-radius: 50%;
+}
+
 .header__container img {
   width: 30%;
 }

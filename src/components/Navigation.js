@@ -13,8 +13,7 @@ function Navigation() {
           />
         </div>
         <ul className='navigation__list'>
-            <li>
-              <NavLink activeClassName="info_container" to='/' >Home</NavLink>
+            <li>Top
             </li>
             <li>Middle</li>
             <li>Bottom</li>
