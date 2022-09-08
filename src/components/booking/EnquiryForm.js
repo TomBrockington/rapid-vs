@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../../styles/enquiryForm.css";
 
-
 function EnquiryForm() {
   const [formData, setFormData] = useState({
-    name: "", enquiry: "", phone: "", email: ""
+    name: "",
+    enquiry: "",
+    phone: "",
+    email: "",
   });
 
   const handleChange = (event) => {
@@ -15,7 +17,7 @@ function EnquiryForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('hi');
+    console.log("hi");
   };
 
   const showData = (event) => {
@@ -26,38 +28,44 @@ function EnquiryForm() {
 
   return (
     <section className="form__container">
+      
+        <h2>Booking Rapid Van Solutions</h2>
+      
+
       <div className="form__header">
-        <h2>EnquiryForm</h2>
+        <h2>Enquiry Form</h2>
       </div>
       <div>
         <form className="enquiry__form" onSubmit={handleSubmit}>
-          
           <label htmlFor="name">
             Name:
-            <input 
-              type="text" 
-              required 
-              onChange={handleChange} 
-              value={formData.name} />
+            <input
+              type="text"
+              required
+              onChange={handleChange}
+              value={formData.name}
+            />
           </label>
 
           <label htmlFor="email">
             email:
-            <input 
-              type="email" 
-              minLength={5} 
-              required 
+            <input
+              type="email"
+              minLength={5}
+              required
               onChange={handleChange}
-              value={formData.email} />
+              value={formData.email}
+            />
           </label>
 
           <label htmlFor="phone">
             phone:
-            <input 
-              type="phone" 
-              minLength={11} 
+            <input
+              type="phone"
+              minLength={11}
               onChange={handleChange}
-              value={formData.phone} />
+              value={formData.phone}
+            />
           </label>
 
           <label htmlFor="textarea">
@@ -71,10 +79,13 @@ function EnquiryForm() {
             />
           </label>
 
-          <button className="form__submit__button" type="submit" onClick={showData}>
+          <button
+            className="form__submit__button"
+            type="submit"
+            onClick={showData}
+          >
             Submit
           </button>
-
         </form>
       </div>
     </section>

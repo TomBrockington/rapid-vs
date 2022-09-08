@@ -1,4 +1,8 @@
-.review__container {
+.bookinginfo__container {
     padding: 0.5rem;
     margin: 0.5rem;
+    border: 2px solid lightgray;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

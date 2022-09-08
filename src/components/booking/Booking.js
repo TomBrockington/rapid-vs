@@ -5,9 +5,10 @@ import EnquiryForm from "./EnquiryForm";
 
 function Booking() {
   return (
-    <section className="bookinginfo_container">
-      <div>Booking Rapid Van Solutions</div>
+    <section className="bookinginfo__container">
+      <div>Info</div>
       <EnquiryForm />
+      <div>Map</div>
     </section>
   );
 }
