@@ -1,8 +1,6 @@
 .info_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px 300px 300px;
-  width: auto;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
   place-items: center;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -46,8 +44,8 @@
 
 .info_container > * {
   border: 2px solid black;
-  height: 300px;
   width: 100%;
+  min-height: 400px;
   display: grid;
   place-items: center;
 }

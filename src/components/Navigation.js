@@ -13,10 +13,10 @@ function Navigation() {
           />
         </div>
         <ul className='navigation__list'>
-            <li>Top
+            <li>Welcome
             </li>
-            <li>Middle</li>
-            <li>Bottom</li>
+            <li>About</li>
+            <li>Contact</li>
         </ul>
     </nav>
   )

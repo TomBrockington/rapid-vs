@@ -4,7 +4,10 @@ nav {
     padding: 0.25rem;
     place-items: center;
     margin: 0.5rem;
-    justify-content: end;
+}
+
+nav * {
+    /* border: 2px dotted green; */
 }
 
 .navigation__list {
@@ -13,6 +16,19 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: end;
+}
+
+.navigation__list li {
+    color: black;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+}
+
+.navigation__list li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .navigation__logo {

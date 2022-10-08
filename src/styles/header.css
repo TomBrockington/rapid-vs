@@ -12,7 +12,7 @@
   color: lightgray;
   border: 5px solid lightgray;
   display: grid;
-  place-items: center;
+  /* place-items: center; */
   margin: 0.5rem;
   height: 80vh;
   width: 98%;
@@ -20,39 +20,58 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+
+  /* grid-template-columns: 50% 50%;
+  grid-template-rows: 80% 20%; */
+  grid-template: 
+    "title contact" 80%
+    "banner banner" 20% /
+    1fr 1fr
+  ;
 }
 
-.main__logo {
-  display: grid;
-  /* grid-template-columns: 90%; */
+.main-title {
+  grid-area: title;
+  padding-left: 3rem;
+  font-size: 10rem;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  line-height: 0;
 }
 
-.header__logo {
-  border-radius: 50%;
+.contact-info {
+  grid-area: contact;
+  grid-template-rows: 1fr auto auto;
+  padding-left: 10rem;
+  font-size: 1.5rem;
 }
 
-.header__container img {
-  width: 30%;
+.contact-info h3 {
+  padding-top: 23rem;
 }
 
-.header__info {
+.lowerBanner {
+  grid-area: banner;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  width: 90%;
-  padding: 2rem;
-  border: 2px solid #f69122;
-  margin: 1rem;
+  font-size: 1.5rem;
 }
 
-.header__info img {
-  width: 200px;
+.lowerBanner img {
+  height: 75px;
 }
 
 @media screen {
   @media only screen and (max-width: 600px) {
     .header__background__image {
       border: none;
+    grid-template: 
+    "title"
+    "contact"
+    "banner"
+    
     }
+  ;
   }
 }
