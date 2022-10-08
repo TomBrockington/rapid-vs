@@ -10,7 +10,6 @@ const {
 } = require('../domain/reviews');
 
 const getAllReviews = async (req, res) => {
-  console.log('getAllReviews');
   try {
     const foundReviews = await findAllReviews();
 
@@ -39,8 +38,8 @@ const createNewReview = async (req, res) => {
 
     const newReview = await createReview(email, newUser.id, content, rating);
 
-    const newAverage = await calculateAverage()
-    const averageScore = newAverage._avg.rating
+    let averageScore = await calculateAverage()
+    averageScore = averageScore._avg.rating
 
     return res
       .status(201)
