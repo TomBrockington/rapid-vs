@@ -36,10 +36,24 @@ const findAllReviews = () =>
     orderBy: { rating: 'asc' },
   });
 
+const findReviewById = (reviewId) => prisma.review.findFirst({
+  where: {
+    id: reviewId
+  }
+})
+
+const deleteReview = (reviewId) => prisma.review.delete({
+  where: {
+    id: reviewId,
+  },
+})
+
 module.exports = {
   findUserByEmail,
   createNewUser,
   createReview,
   findAllReviews,
-  calculateAverage
+  calculateAverage,
+  findReviewById,
+  deleteReview
 };

@@ -7,6 +7,8 @@ const {
   createReview,
   calculateAverage,
   findAllReviews,
+  findReviewById,
+  deleteReview
 } = require('../domain/reviews');
 
 const getAllReviews = async (req, res) => {
@@ -49,7 +51,37 @@ const createNewReview = async (req, res) => {
   }
 };
 
+const deleteReviewById = async (req, res) => {
+  console.log('deleting')
+  const reviewId = Number(req.params.id)
+  console.log('reviewId', reviewId)
+
+  try {
+
+    const foundReview = await findReviewById(reviewId)
+    console.log('foundReview', foundReview)
+
+    if (!foundReview) {
+      return res
+       .status(404).json({ error: 'Review not found'})
+    }
+
+    const deletedReview = await deleteReview(reviewId)
+    console.log('deletedReview', deletedReview)
+
+    let averageScore = await calculateAverage()
+    averageScore = averageScore._avg.rating
+
+    return res
+     .status(200).json({ data: { deletedReview, averageScore } })
+
+  } catch (err) { 
+    return res.status(500).json({ message: '500 Fail' });
+  }
+};
+
 module.exports = {
   getAllReviews,
   createNewReview,
+  deleteReviewById
 };
