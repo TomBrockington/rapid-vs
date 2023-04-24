@@ -1,22 +1,18 @@
-import Booking from './components/booking/Booking';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import InfoGrid from './components/InfoGrid';
-import Navigation from './components/Navigation';
-import ReviewsRating from './components/ReviewsRating';
-import './styles/app.css';
+import { Route, Routes } from 'react-router-dom';
+// Analytics
+import ReactGA from 'react-ga';
+// Components
+import Homepage from './pages/home/HomePage';
 
 function App() {
+  ReactGA.initialize('G-5TSPX20DLD');
+  ReactGA.pageview('/');
+
   return (
     <>
-      <Navigation />
-      <Header />
-      <main>
-        <InfoGrid />
-        <Booking />
-        <ReviewsRating />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Homepage />} index />
+      </Routes>
     </>
   );
 }

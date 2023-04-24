@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/booking.css";
 import EnquiryForm from "./EnquiryForm";
 
 
