@@ -14,11 +14,12 @@ module.exports = {
         'colour-light': '#e2e8f0',
         'colour-med': '#94a3b8',
         'colour-dark': '#1e293b',
+  
         'transparent-black': 'rgba(0, 0, 0, 0.65)',
         'transparent-black-2': 'rgba(0, 0, 0, 0.85)',
         'transparent-white': 'rgba(255, 255, 255, 0.65)',
         'transparent-white-2': 'rgba(255, 255, 255, 0.45)',
-        'transparent-purple': 'rgba(147, 51, 234, 0.65)',
+        'transparent-orange': 'rgba(237, 137, 54, 0.65)',
         'transparent-green': 'rgba(22, 163, 74, 0.65)',
         'transparent-yellow': 'rgba(234, 179, 8, 0.65)',
         'main-text': '#000000',
