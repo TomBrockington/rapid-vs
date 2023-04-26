@@ -19,13 +19,13 @@ function Navbar() {
         </section>
 
         <section className='flex justify-center items-center'>
-          <h2 className='font-semibold ml-6'>Rapid Van Solutions</h2>
+          <h2 className='font-semibold ml-6 text-xl'>Rapid Van Solutions</h2>
         </section>
 
         {/* Navigation */}
         <nav className='flex items-center'>
           <ul className='pr-2'>
-            <li className='text-xl font-semibold outline outline-2 outline-black rounded p-1 bg-orange-400'>
+            <li className='text-xl font-semibold outline outline-2 outline-black rounded p-1 bg-orange-400 md:px-6'>
               <Link>
                 <span>Contact</span>
               </Link>

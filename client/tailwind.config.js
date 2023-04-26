@@ -5,6 +5,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'main-bg': "url('../assets/images/side_van.jpg')",
+        'display-1': "url('../assets/images/white-goods.jpg')",
+        'display-2': "url('../assets/images/good_van.jpg')",
+        'display-3': "url('../assets/images/spacious-bike.jpg')",
+        'display-4': "url('../assets/images/van-interrior.jpg')",
+        'display-5': "url('../assets/images/pink_bike.jpg')",
+        'display-6': "url('../assets/images/RVS-logo.jpg')",
       },
       colors: {
         'main-colour': '#f69122',
@@ -66,6 +72,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
+        'sigmar': ['Sigmar', 'sans-serif'],
       },
     },
   },
