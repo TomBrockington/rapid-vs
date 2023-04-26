@@ -4,7 +4,7 @@ import WasteImg from '../../assets/images/waste.jpg';
 
 function Header() {
   return (
-    <header className='bg-gray-100 grid'>
+    <header className='bg-gray-100 grid h-full'>
       {/* Content */}
       <section className='grid p-3'>
         <section className='relative grid gap-0 bg-center bg-main-bg bg-cover w-full bg-no-repeat h-full outline outline-4 outline-black rounded'>
@@ -75,7 +75,9 @@ function Header() {
               </div>
 
               <div className='hidden sm:grid p-4 outline outline-4 outline-gray-100 rounded-xl bg-main-colour hover:bg-orange-500 cursor-pointer font-medium w-fit absolute bottom-4 left-4'>
-                <p>email: test@email.com</p>
+                <a href="mailto: rapidvansolutions@gmail.com">
+                <p>email: rapidvansolutions@gmail.com</p>
+                </a>
               </div>
             </section>
           </div>
