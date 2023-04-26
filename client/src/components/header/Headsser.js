@@ -16,7 +16,7 @@ function Header() {
 
           <div className="contact-info">
             <h3>Contact me now!</h3>
-            <p>email: test @email.com</p>
+            <p>email: test@email.com</p>
             <p>phone: 07463463454</p>
           </div>
 
