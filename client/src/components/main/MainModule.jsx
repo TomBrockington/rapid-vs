@@ -63,6 +63,16 @@ function MainModule() {
         </article>
         <Options />
       </section>
+
+      {/* DISPLAY - 6 BOXS */}
+      <section className='w-1/2 mx-auto bg-green-300 h-screen'>
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+        <section>1</section>
+      </section>
     </main>
   );
 }
