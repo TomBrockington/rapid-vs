@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../../components/nav/Navbar';
 import Header from '../../components/header/Header';
 import MainModule from '../../components/main/MainModule';
+import Footer from '../../components/footer/Footer';
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         <Header />
       </section>
       <MainModule />
+      <Footer />
     </div>
   );
 }

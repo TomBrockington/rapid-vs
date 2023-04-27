@@ -51,3 +51,10 @@ export const thirdData = [
     text: `Friendly service`,
   },
 ];
+
+export const contactFormInitData = {
+  name: "",
+  phone: "",
+  email: "",
+  message: "",
+};
