@@ -3,9 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer className="mt-8 p-4 border-t-2 border-solid border-black bg-orange-400">
-      <section className='flex justify-between'>
+      <section className='grid lg:grid-flow-col lg:justify-between'>
         <article>
-          <h2 className="font-sigmar text-3xl ">RAPID VAN SOLUTIONS</h2>
+          <h2 className="font-sigmar lg:text-3xl">RAPID VAN SOLUTIONS</h2>
           <h3>Owned and operated from Tavistock, Devon</h3>
         </article>
         <article className='pr-4'>

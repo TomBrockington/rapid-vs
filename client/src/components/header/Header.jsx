@@ -21,7 +21,7 @@ function Header() {
           <div className="grid">
             <section className="grid justify-center gap-1 lg:justify-start px-3 lg:w-fit lg:h-fit lg:gap-4 lg:p-4">
               <article className="border-gray-100 border-solid border-4 h-fit mt-4 lg:mt-0 bg-main-colour text-center p-6">
-                <h1 className="text-6xl lg:text-7xl font-bold mb-2 font-sigmar">
+                <h1 className="text-4xl lg:text-7xl font-bold mb-2 font-sigmar">
                   Rapid Van Solutions
                 </h1>
                 <h2 className="text-3xl font-semibold my-1 leading-7 mb-2">
