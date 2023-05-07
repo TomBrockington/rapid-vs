@@ -5,10 +5,10 @@ import Logo from '../../assets/images/RVS-logo.jpg';
 
 function Navbar() {
   return (
-    <header className='p-3 grid border-b-2 border-solid border-black'>
-      <section className='grid grid-flow-col justify-between'>
+    <header className='py-3 px-1 lg:p-3 grid border-b-2 border-solid border-black'>
+      <section className='grid grid-flow-col justify-evenly'>
         {/* Logo */}
-        <section>
+        <section className=''>
           <div>
             <img
               className='w-12 h-12 rounded-full'
@@ -19,12 +19,12 @@ function Navbar() {
         </section>
 
         <section className='flex justify-center items-center'>
-          <h2 className='font-semibold ml-6 text-xl'>Rapid Van Solutions</h2>
+          <h2 className='font-semibold ml-6 lg:text-xl'>Rapid Van Solutions</h2>
         </section>
 
         {/* Navigation */}
         <nav className='flex items-center'>
-          <ul className='pr-2'>
+          <ul className='lg:pr-2'>
             <li className='text-xl font-semibold outline outline-2 outline-black rounded p-1 bg-orange-400 md:px-6'>
               <Link>
                 <span>Contact</span>

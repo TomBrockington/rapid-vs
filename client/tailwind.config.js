@@ -20,7 +20,6 @@ module.exports = {
         'colour-light': '#e2e8f0',
         'colour-med': '#94a3b8',
         'colour-dark': '#1e293b',
-  
         'transparent-black': 'rgba(0, 0, 0, 0.65)',
         'transparent-black-2': 'rgba(0, 0, 0, 0.85)',
         'transparent-white': 'rgba(255, 255, 255, 0.65)',

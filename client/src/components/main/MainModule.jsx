@@ -1,20 +1,21 @@
 import React from "react";
 import Options from "../display/Options";
 import GridDisplay from "../display/GridDisplay";
+import ContactForm from '../contact/ContactForm';
 
 function MainModule() {
   return (
-    <main className=" mt-20 px-8">
-      <section className="">
+    <main className="mt-12 px-8">
+      <section className="container mx-auto lg:my-20">
         {/* BASIC INFO */}
         <article>
-          <div className="text-center my-6">
+          <div className="text-center my-8">
             <h2 className="font-sigmar text-4xl">
               HOW CAN RAPID VAN SOLUTIONS HELP YOU?!
             </h2>
           </div>
-          <div className="my-6 pt-2 text-lg px-6">
-            <p>
+          <div className="my-6 pt-2 text-lg">
+            <p className='bg-gray-100 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded'>
               <span className="font-bold">Hello</span> i'm Andy, owner and
               operator of{" "}
               <span className="font-sigmar">Rapid Van Solutions </span>a
@@ -67,6 +68,9 @@ function MainModule() {
 
       {/* DISPLAY - 6 BOXS */}
       <GridDisplay />
+
+      {/* Contact */}
+      <ContactForm />
     </main>
   );
 }
